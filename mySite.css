@@ -116,7 +116,6 @@ h3{
 
 /*intro section*/
 
-.nav{display: none;}
 
 .intro{
         position: relative;
@@ -161,8 +160,30 @@ h3{
     margin: 0 auto;
 }
 
+/*Footer*/
+.cont{
+    
+    font-weight: var(--fw-reg);
+}
+.footer{
+    font-size: var(--fs-h3);
+    background: #536976;  
+    background: -webkit-linear-gradient(to left, #292E49, #536976);
+    background: linear-gradient(to left, #292E49, #536976);
+    color: whitesmoke;
+    text-align: center;
+    padding: 2.5em 0;
+}
+.footer a{
+    color: inherit;
+}
 
-
+a:hover {
+    color: #111;
+  }
+.socials{
+    margin: 0 0.5em;
+}
 
 
 
