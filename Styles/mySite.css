@@ -9,6 +9,7 @@
     --ff-secondary: 'Source Code Pro', monospace;
 
     --fw-reg: 300;
+    --fw-t: 500;
     --fw-bold:900;
 
     --clr-light: #fff;
@@ -67,6 +68,7 @@ body{
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
     line-height: 1.6;
+    background: #e7eff7;
 }
 
 section{
@@ -178,6 +180,83 @@ h3{
     margin: 0 auto;
 }
 
+/*Terminal*/
+#terminal__head{
+    border: 2px solid hsl(216, 43%, 34%);
+    border-radius: 10px 10px 0 0;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    background: hsl(216, 43%, 34%);
+   
+    
+}
+#terminal__head--red{
+    
+    background: #ff5c5c;
+    margin-left: 6px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+#terminal__head--yellow{
+    background: #ffbd4c;
+    line-height: 15px;
+    margin-left: 4px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+#terminal__head--green{
+    background: #00ca56;
+    line-height: 11px;
+    margin-left: 6px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+#terminal__body{
+    border: 2px solid  #434c5e;
+    background: #434c5e;
+    color: whitesmoke;
+    font-weight: var(--fw-t);
+    font-size: var(--fs-h3);
+}
+.terminal__body__output{
+    color:#e7d184;
+}
+.terminal__body__items{
+    margin: 1em 2em;
+}
+.terminal__body--link{
+    margin-right: 4px;
+    color: whitesmoke;
+}
+.terminal__body--link:hover{
+    color: #e7d184;
+
+}
+
+/*Prjects*/
+.my-projects .section__title{
+    text-align: center;
+    padding-bottom: 0.75em;
+    
+}
+
+#contain_project{
+    display: flex;
+    flex-wrap: wrap;
+}
+#contain_project div{
+    border: 2px solid hsl(216, 43%, 34%);
+    padding: 10px;
+    margin-left: 30px;}
+.myproject{
+    
+    width: 30%;
+
+}
 /*Footer*/
 .cont{
     
@@ -196,7 +275,7 @@ h3{
     color: inherit;
 }
 
-a:hover {
+.footer a:hover {
     color: #111;
   }
 .socials{
