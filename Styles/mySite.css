@@ -1,0 +1,232 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+/*custom stlyes*/
+:root{
+    --ff-primary: 'Source Sans Pro',sans-serif;
+    --ff-secondary: 'Source Code Pro', monospace;
+
+    --fw-reg: 300;
+    --fw-bold:900;
+
+    --clr-light: #fff;
+    --clr-dark: #303030;
+    --clr-accent: #3e6e81b7;
+
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+
+    --bs:0.2em 0.25em 0.75em rgb(0,0,0,25),
+         0.125em 0.125em 0.25em rgb(0,0,0,15);
+
+}
+
+@media (min-width: 800px){
+    :root{
+        --fs-h1: 4.5rem;
+        --fs-h2: 3.75rem;
+        --fs-h3: 1.5rem;
+        --fs-body:  1.25rem;
+    }
+}
+
+/*general stlyes*/
+#nav__bar{
+    background: #536976; 
+    background: -webkit-linear-gradient(to left, #292E49, #536976);
+    background: linear-gradient(to left, #292E49, #536976);
+}
+
+
+#nav__bar, #nav__coll {         
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;  
+} 
+.navbar-nav a{
+    color: white;
+    font-size: var(--fs-body);
+    margin: 0 0.5em;
+    
+
+}
+.header{
+    color: lightyellow;
+    background: #536976;  
+    background: -webkit-linear-gradient(to left, #292E49, #536976);
+    background: linear-gradient(to left, #292E49, #536976);
+}
+
+body{
+  /*  background: var(--clr-light);*/
+    color: var(--clr-dark);
+    margin: 0;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    line-height: 1.6;
+}
+
+section{
+    padding: 5em 2em;
+}
+
+img{
+   /* border-radius: 50%;*/
+   display: block;  
+    max-width: 100%;
+    border: 2px solid #000102;
+}
+
+strong{font-weight: var(--fw-bold);}
+
+:focus{
+    outline: 3px solid var(--clr-accent);
+    outline-style: 3px;
+}
+
+/*Typography*/
+h1,
+h2,
+h3{
+    line-height: 1;
+    margin: 0;
+    
+}
+h1{
+    font-size: var(--fs-h1);
+    
+}
+h2{
+    font-size: var(--fs-h2);
+}
+h3{
+    font-size: var(--fs-h3);
+}
+
+.section__title{
+    margin-bottom: 0.25em;
+}
+
+.section__title--intro{
+    font-weight: var(--fw-reg);
+}
+
+.section__title--intro strong{
+    display: block;
+}
+
+.section__subtitle{
+    margin: 0;
+    font-size: var(--fs-h3);
+}
+
+.section__subtitle--intro,
+.section__subtitle--about{
+    background: var(--clr-accent);
+    padding: .25em;
+    font-family: var(--ff-secondary);
+    margin-bottom: 1em;
+    border: 2px solid #768887;
+}
+
+/*intro section*/
+
+
+.intro{
+        position: relative;
+}
+
+.intro__img{
+    box-shadow: var(--bs);
+}
+
+.section__subtitle--intro{
+    display: inline-block;
+}
+@media (min-width: 600px){
+    .intro{
+        display: grid;
+        width: min-content;
+        margin: 0 auto;
+        grid-column-gap:1em ;
+        grid-template-areas: 
+        "img title"
+        "img subtitle";
+        grid-template-columns: min-content max-content;
+    }
+    .intro__img{
+        grid-area: img;
+        min-width: 250px;
+        position: relative;
+        z-index: 2;
+    }
+    .section__subtitle--intro{
+        align-self: start;
+        grid-column: -1/1;
+        grid-row: 2;
+        text-align: right;
+        position: relative;
+        width: calc(100%+1.5em);
+    }
+}
+
+.about-me{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/*Footer*/
+.cont{
+    
+    font-weight: var(--fw-reg);
+}
+.footer{
+    font-size: var(--fs-h3);
+    background: #536976;  
+    background: -webkit-linear-gradient(to left, #292E49, #536976);
+    background: linear-gradient(to left, #292E49, #536976);
+    color: whitesmoke;
+    text-align: center;
+    padding: 2.5em 0;
+}
+.footer a{
+    color: inherit;
+}
+
+a:hover {
+    color: #111;
+  }
+.socials{
+    margin: 0 0.5em;
+}
+
+
+
+
+
+
+
+
+
+/*
+background: #536976;  / fallback for old browsers /
+background: -webkit-linear-gradient(to left, #292E49, #536976);  /Chrome 10-25, Safari 5.1-6 /
+background: linear-gradient(to left, #292E49, #536976); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+
+ 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top" id="nav__bar">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav" id="">
+            <li > <a href="#home" class="nav__link">Home</a></li>
+            <li><a href="#aboutMe" class="nav__link">About Me</a></li>
+            <li> <a href="#projects" class="nav__link">Projects</a></li>
+            <li ><a href="#contacts" class="nav__link">Contacts</a></li>
+          </ul>
+        </div>
+      </nav>*
+/
