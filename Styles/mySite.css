@@ -173,6 +173,7 @@ h3{
         position: relative;
         width: calc(100%+1.5em);
     }
+    
 }
 
 .about-me{
@@ -244,19 +245,55 @@ h3{
     
 }
 
-#contain_project{
+#flex__container{
     display: flex;
+    align-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
-}
-#contain_project div{
-    border: 2px solid hsl(216, 43%, 34%);
-    padding: 10px;
-    margin-left: 30px;}
-.myproject{
-    
-    width: 30%;
+    flex-direction: column;
+    margin-bottom: 10px;
 
 }
+
+#flex__container div{
+    border: 2px solid hsl(216, 43%, 34%);
+    width: 60%;
+    }
+
+.myproject{
+    padding: 20px;
+    margin: 10px 4px;
+    box-shadow: var(--bs);
+    flex-basis: 33%;
+    border-radius: 20px 20px 20px 20px;
+}
+.myproject p{
+    margin-bottom: 10px;
+}
+
+
+.myproject .viewLink{
+    background: #6681b8;
+    color: whitesmoke;
+    display: inline-block;
+    line-height: 40px;
+    padding: 0 14px;
+    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+    border-radius: 20px 20px 20px 20px;
+    letter-spacing: .025em;
+    display: table;
+    margin: 0 auto;
+    text-align: center;
+}
+.myproject h3{
+    font-weight: var(--fw-bold);
+    
+}
+.language{
+    color: rgb(24, 101, 202);
+    
+}
+
 /*Footer*/
 .cont{
     
