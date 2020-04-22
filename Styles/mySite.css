@@ -178,7 +178,9 @@ h3{
 
 .about-me{
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 0 auto;}
+.section__subtitle-about{
+    margin-bottom: 40px;
 }
 
 /*Terminal*/
