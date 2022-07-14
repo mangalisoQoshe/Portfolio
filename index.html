@@ -9,15 +9,17 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
     />
     <link rel="stylesheet" href="Styles/mySite.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
     <!-- NAVIGATION -->
     <header>
-      <nav>
+      <nav class="nav">
         <ul>
           <li><a href="#home">HOME</a></li>
           <li><a href="#projects">PROJECTS</a></li>
@@ -29,9 +31,12 @@
 
     <!-- INTRODUCTION -->
     <section class="introduction">
-      <h1>Hello, I'm <strong>Mangaliso Qoshe</strong></h1>
-      <p>Software Engineer</p>
-      <img src="Images/9.jpg" alt="Mangaliso's faceshot" class="intro__img" />
+      <div class="picture-around_text">
+        <img src="Images/9.jpg" alt="Mangaliso's faceshot" class="intro__img" />
+        <h1>Hello, I'm <strong>Mangaliso Qoshe</strong></h1>
+        <p>Software Engineer</p>
+        
+      </div>
     </section>
 
     <!-- ABOUT ME -->
@@ -112,8 +117,55 @@
 
     <!-- MY PROJECTS -->
     <section>
-        <h2 >Projects</h2>
-      <div id="flex__container">
+      <h2>Projects</h2>
+    </section>
+
+    <!--FOOTER-->
+    <footer id="contacts" class="footer">
+      <p class="cont">Contact Me</p>
+      <a class="socials" href="mailto:michael.qoshe98@gmail.com" target="_blank"
+        ><i class="far fa-envelope"></i
+      ></a>
+      <a
+        class="socials"
+        href="https://linkedin.com/in/mangaliso-qoshe-091a9b17a"
+        target="_blank"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+      <a
+        class="socials"
+        href="https://github.com/mangalisoQoshe"
+        target="_blank"
+        ><i class="fab fa-github"></i
+      ></a>
+    </footer>
+
+    <!-- SCRIPS -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/794f351328.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha384-xBuQ/xzmlsLoJpyjoggmTEz8OWUFM0/RC5BsqQBDX2v5cMvDHcMakNTNrHIW2I5f"
+      crossorigin="anonymous"
+    ></script>
+    <script src="javascript/mySite.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+      integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+      integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+
+<!--  <div id="flex__container">
         <div class="myproject">
           <h3>Portfolio</h3>
           <p class="language">Html, CSS, Javascript</p>
@@ -158,50 +210,4 @@
             >&lt;Code/&gt;</a
           >
         </div>
-      </div>
-    </section>
-
-    <!--FOOTER-->
-    <footer id="contacts" class="footer">
-      <p class="cont">Contact Me</p>
-      <a class="socials" href="mailto:michael.qoshe98@gmail.com" target="_blank"
-        ><i class="far fa-envelope"></i
-      ></a>
-      <a
-        class="socials"
-        href="https://linkedin.com/in/mangaliso-qoshe-091a9b17a"
-        target="_blank"
-        ><i class="fab fa-linkedin-in"></i
-      ></a>
-      <a
-        class="socials"
-        href="https://github.com/mangalisoQoshe"
-        target="_blank"
-        ><i class="fab fa-github"></i
-      ></a>
-    </footer>
-     
-    <!-- SCRIPS -->
-    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
-    <script
-      src="https://kit.fontawesome.com/794f351328.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.min.js"
-      integrity="sha384-xBuQ/xzmlsLoJpyjoggmTEz8OWUFM0/RC5BsqQBDX2v5cMvDHcMakNTNrHIW2I5f"
-      crossorigin="anonymous"
-    ></script>
-    <script src="javascript/mySite.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
-      integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
-      integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
-      crossorigin="anonymous"
-    ></script>
-  </body>
-</html>
+      </div> -->
