@@ -1,16 +1,18 @@
-// $('.navbar a').on('click',function(e)
-// {
-//     if(this.hash !== '')
-//     {
-//         e.preventDefault();
-//         const hash = this.hash;
-
-//         $('html,body').animate({
-//             scrollTop: $(hash).offset().top
-//         },800);
-//     }
-// });
-
-var scroll = new SmoothScroll('.navbar a[href*="#"]',{
+const humburger = document.querySelector(".humburger");
+const navMenu = document.querySelector(".nav-menu");
+var scroll = new SmoothScroll('.nav a[href*="#"]',{
     speed:800
 });
+
+
+
+humburger.addEventListener("click",()=>{
+    humburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+})
+
+document.querySelectorAll(".nav-link").forEach(n=>n.addEventListener("click",()=>{
+    humburger.classList.remove("active");
+    navMenu.classList.remove("active");
+   
+}))

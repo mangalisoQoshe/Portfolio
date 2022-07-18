@@ -2,16 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=devise-width, initial-scale=1.0" />
-    <title>Portfolio Website</title>
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes"
+    />
+    <title>Mangaliso Qoshe - Portfolio Website</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
     />
     <link rel="stylesheet" href="Styles/mySite.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;700;900&display=swap"
@@ -22,12 +22,18 @@
     <!-- NAVIGATION -->
     <header>
       <nav class="nav">
-        <ul>
-          <li><a href="#home">HOME</a></li>
-          <li><a href="#projects">PROJECTS</a></li>
-          <li><a href="#about-me">ABOUT ME</a></li>
-          <li><a href="#contacts">CONTACT</a></li>
+        <ul class="nav-menu">
+          <li class="nav-item"><a class="nav-link" href="#home">HOME</a></li>
+          <li  class="nav-item"><a class="nav-link" href="#projects">PROJECTS</a></li>
+          <li  class="nav-item"><a class="nav-link" href="#about-me">ABOUT ME</a></li>
+          <li  class="nav-item"><a class="nav-link" href="#contacts">CONTACT</a></li>
         </ul>
+
+        <div class="humburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
       </nav>
     </header>
 
@@ -40,8 +46,10 @@
             alt="Mangaliso's faceshot"
             class="intro__img"
           />
-          <h1 class="intro-text">Hello, I'm <strong>Mangaliso  Qoshe</strong></h1>
-          <p class="intro-text" >Software Engineer</p>
+          <h1 class="intro-text">
+            Hello, I'm <strong>Mangaliso Qoshe</strong>
+          </h1>
+          <p class="intro-text">Software Engineer</p>
         </div>
       </div>
     </section>
@@ -126,34 +134,49 @@
           <div class="project-details">
             <h3>Portfolio Website</h3>
             <p>A simple static website built for showcasing my projects.</p>
-            <br>
+            <br />
             <p>Designed and developed in 2020 and it was refactored in 2022</p>
-            <br>
+            <br />
             <ul class="fa-ul">
-              <li><span class="fa-li"><i class="fa-solid fa-greater-than fa-xs arrow"></i></span>HTML</li>
-              <li><span class="fa-li"><i class="fa-solid fa-greater-than fa-xs arrow"></i></span>CSS</li>
-              <li><span class="fa-li"><i class="fa-solid fa-greater-than fa-xs arrow"></i></span>Javascript</li>              
-            </ul>  
+              <li>
+                <span class="fa-li"
+                  ><i class="fa-solid fa-greater-than fa-xs arrow"></i></span
+                >HTML
+              </li>
+              <li>
+                <span class="fa-li"
+                  ><i class="fa-solid fa-greater-than fa-xs arrow"></i></span
+                >CSS
+              </li>
+              <li>
+                <span class="fa-li"
+                  ><i class="fa-solid fa-greater-than fa-xs arrow"></i></span
+                >Javascript
+              </li>
+            </ul>
             <div class="project-hack"></div>
-            <a class="code-source" href="https://github.com/mangalisoQoshe/Portfolio" target="_blank">&lt;Code/&gt</a>
-             
+            <a
+              class="code-source"
+              href="https://github.com/mangalisoQoshe/Portfolio"
+              target="_blank"
+              >&lt;Code/&gt</a
+            >
           </div>
-        
         </div>
       </div>
     </section>
 
     <!--FOOTER-->
     <footer id="contacts" class="footer">
-      <h4 >Contact Me</h4>
+      <h4>Contact Me</h4>
       <a class="socials" href="mailto:michael.qoshe98@gmail.com" target="_blank"
-        ><i class="far fa-envelope  fa-2x"></i
+        ><i class="far fa-envelope fa-2x"></i
       ></a>
       <a
         class="socials"
         href="https://linkedin.com/in/mangaliso-qoshe-091a9b17a"
         target="_blank"
-        ><i class="fab fa-linkedin-in  fa-2x"></i
+        ><i class="fab fa-linkedin-in fa-2x"></i
       ></a>
       <a
         class="socials"
@@ -163,25 +186,16 @@
       ></a>
     </footer>
 
-    
-
     <!-- SCRIPS -->
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
-    <script src="https://kit.fontawesome.com/d23e5d3ad7.js" crossorigin="anonymous"></script>
     <script
-      src="https://code.jquery.com/jquery-3.2.1.min.js"
-      integrity="sha384-xBuQ/xzmlsLoJpyjoggmTEz8OWUFM0/RC5BsqQBDX2v5cMvDHcMakNTNrHIW2I5f"
+      src="https://kit.fontawesome.com/d23e5d3ad7.js"
       crossorigin="anonymous"
     ></script>
     <script src="javascript/mySite.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
       integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
-      integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
       crossorigin="anonymous"
     ></script>
   </body>
