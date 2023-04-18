@@ -1,4 +1,4 @@
-*, *::before, *::after {
+/* *, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
@@ -350,6 +350,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction:column;
    
 }
 
@@ -378,6 +379,16 @@ header{
     width: 70%;
     color: #fff;
     background: #3E497A;
+    margin-bottom: 3em;
+}
+
+.project2 img{
+
+    height: 300px;
+}
+
+.project3 img{
+    height: 800px;
 }
 
 @media screen and (max-width: 929px){
@@ -465,4 +476,4 @@ header{
 
 .footer a:hover{
     color: #e7d184;
-}
+} 

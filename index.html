@@ -6,191 +6,333 @@
       name="viewport"
       content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes"
     />
-    <title>Mangaliso Qoshe - Portfolio Website</title>
+    <title>Mangaliso Qoshe</title>
+    <link rel="icon" href="Images/page-icon" type="image/icon type" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
     />
-    <link rel="stylesheet" href="Styles/mySite.css" />
+    <link rel="stylesheet" href="Styles/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Source+Code+Pro:ital,wght@0,300;0,500;0,700;1,400&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <!-- NAVIGATION -->
-    <header>
-      <nav class="nav">
-        <ul class="nav-menu">
-          <li class="nav-item"><a class="nav-link" href="#home">HOME</a></li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about-me">ABOUT ME</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#projects">PROJECTS</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#contacts">CONTACT</a>
-          </li>
-        </ul>
-
-        <div class="humburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-      </nav>
-    </header>
-
-    <!-- INTRODUCTION -->
-    <section id="home" class="introduction">
-      <div class="introduction-container">
-        <div class="introduction-text">
-          <img
-            src="Images/9.jpg"
-            alt="Mangaliso's faceshot"
-            class="intro__img"
-          />
-          <h1 class="intro-text">
-            Hello, I'm <strong>Mangaliso Qoshe</strong>
-          </h1>
-          <p class="intro-text">Software Engineer</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ABOUT ME -->
-    <section id="about-me">
-      <h2 class="about-me_heading">Who am I ?</h2>
-      <p class="about-me_paragraph">
-        I'm a young driven professional looking to enter the world of Software
-        Engineering. I've spent the last few years honing my skills. I'm
-        hardworking, receptive and unrelenting when it comes to doing the very
-        best that I can and also I'm passionate about using technology to solve
-        problems and create useful applications.
-      </p>
-
-      <!-- Terminal -->
-      <div id="terminal">
-        <div id="terminal__head">
-          <div id="terminal__head--red"></div>
-          <div id="terminal__head--yellow"></div>
-          <div id="terminal__head--green"></div>
-        </div>
-        <div id="terminal__body">
-          <div class="terminal__body__items">
-            <div class="terminal__body__input">> Mangaliso.currentLocation</div>
-            <div class="terminal__body__output">"Cape Town"</div>
+    <header class="primary-header bg-primary">
+      <div class="container">
+        <div class="nav-wrapper">
+          <div class="logo-wrapper">
+            <span class="ff-logo" role="logo">M.M Qoshe</span>
+            <svg class="icon">
+              <use xlink:href="Images/code.svg#icon-code"></use>
+            </svg>
           </div>
 
-          <div class="terminal__body__items">
-            <div class="terminal__body__input">> Mangaliso.contactInfo</div>
-            <div class="terminal__body__output">
-              [
-              <a
-                class="terminal__body--link"
-                href="mailto:michael.qoshe98@gmail.com"
-                target="_blank"
-                >"Email",</a
-              >
-              <a
-                class="terminal__body--link"
-                href="https://linkedin.com/in/mangaliso-qoshe-091a9b17a"
-                target="_blank"
-              >
-                "Linkedin"</a
-              >
-              ]
-            </div>
-          </div>
-
-          <div class="terminal__body__items">
-            <div class="terminal__body__input">> Mangaliso.interest</div>
-            <div class="terminal__body__output">
-              ["Chess", "Reading: Manga, Webtoons, Novels", "Tv shows",
-              "Hiking", "Working Out"]
-            </div>
-          </div>
-
-          <div class="terminal__body__items">
-            <div class="terminal__body__input">> Mangaliso.education</div>
-            <div class="terminal__body__output">
-              "Bsc in Computer Science and Computer Engineering - University Of
-              Cape Town"
-            </div>
-          </div>
-
-          <div class="terminal__body__items">
-            <div class="terminal__body__input">> Mangaliso.skills</div>
-            <div class="terminal__body__output">
-              ["Java" , "Python" , "C++" , "Javascript" , "Git", "MERN Stack" ]
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- MY PROJECTS -->
-    <section id="projects" class="projects">
-      <h2 class="projects-heading">Projects</h2>
-      <div class="projects-container">
-        <div class="project">
-          <img src="Images/project1.png" alt="Project Picture" />
-          <div class="project-details">
-            <h3>Portfolio Website</h3>
-            <p>A simple static website built for showcasing my projects.</p>
-            <br />
-            <p>Designed and developed in 2020 and it was refactored in 2022</p>
-            <br />
-            <ul class="fa-ul">
-              <li>
-                <span class="fa-li"
-                  ><i class="fa-solid fa-greater-than fa-xs arrow"></i></span
-                >HTML
+          <nav class="nav">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a
+                  href="https://www.google.com/"
+                  target="_blank"
+                  class="nav-link"
+                  >Blog</a
+                >
               </li>
-              <li>
-                <span class="fa-li"
-                  ><i class="fa-solid fa-greater-than fa-xs arrow"></i></span
-                >CSS
+              <li class="nav-item">
+                <a href="#about-me" class="nav-link">About Me</a>
               </li>
-              <li>
-                <span class="fa-li"
-                  ><i class="fa-solid fa-greater-than fa-xs arrow"></i></span
-                >Javascript
+              <li class="nav-item">
+                <a href="#projects" class="nav-link">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contacts" class="nav-link">Contact</a>
               </li>
             </ul>
-            <div class="project-hack"></div>
-            <a
-              class="code-source"
-              href="https://github.com/mangalisoQoshe/Portfolio"
-              target="_blank"
-              >&lt;Code/&gt</a
-            >
+          </nav>
+          <button class="mode-button">
+            <svg class="moon-icon">
+              <use xlink:href="Images/noun-moon-5633032.svg#icon-moon"></use>
+            </svg>
+            <img
+              src="Images/noun-sun-5282818.svg"
+              alt="sun icon"
+              class="visually-hidden"
+            />
+          </button>
+
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!--FOOTER-->
-    <footer id="contacts" class="footer">
-      <h4>Contact Me</h4>
-      <a class="socials" href="mailto:michael.qoshe98@gmail.com" target="_blank"
-        ><i class="far fa-envelope fa-2x"></i
-      ></a>
-      <a
-        class="socials"
-        href="https://linkedin.com/in/mangaliso-qoshe-091a9b17a"
-        target="_blank"
-        ><i class="fab fa-linkedin-in fa-2x"></i
-      ></a>
-      <a
-        class="socials"
-        href="https://github.com/mangalisoQoshe"
-        target="_blank"
-        ><i class="fab fa-github fa-2x"></i
-      ></a>
+        <div class="intro-container">
+          <img class="main-pic" src="Images/9.jpg" alt="Picture of me" />
+          <div class="intro-text">
+            <span style="font-weight: 100">Hello, I'm </span> <br /><strong
+              >Mangaliso Qoshe</strong
+            >
+            <img
+              class="hand-icon"
+              src="Images/icons8-waving-hand-medium-skin-tone-96.png"
+              alt=""
+            />
+          </div>
+          <span class="intro-title">Software Engineer</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="bg-secondary text-secondary" id="about-me">
+      <section class="about-me">
+        <div class="container">
+          <h2 class="fs-secondary-heading secondary-heading heading-f-s">
+            Welcome <span> to my personal website!</span> 
+          </h2>
+          <p>
+            As a final year student, I'm eagerly seeking a permanent job or
+            internship. I'm passionate about building elegant, performant, and
+            maintainable code that makes people's lives easier. I've spent the
+            last few years honing my skills and I'm ready to take on new
+            challenges. Feel free to explore my portfolio and projects to get a
+            sense of my work. Let's collaborate and create useful applications
+            together!
+          </p>
+
+          <div class="terminal">
+            <div class="terminal-head">
+              <div class="terminal-head-red"></div>
+              <div class="terminal-head-yellow"></div>
+              <div class="terminal-head-green"></div>
+            </div>
+            <div class="terminal-body">
+              <div class="terminal-body-items">
+                <div class="terminal-body-input">
+                  > Mangaliso.currentLocation
+                </div>
+                <div class="terminal-body-output">"East London"</div>
+              </div>
+
+              <div class="terminal-body-items">
+                <div class="terminal-body-input">> Mangaliso.contactInfo</div>
+                <div class="terminal-body-output">
+                  [
+                  <a
+                    class="terminal-body-link"
+                    href="https://instagram.com/mangaliso_qoshe?igshid=ZDdkNTiNTM="
+                    target="_blank"
+                    >"Instagram",</a
+                  >
+                  <a
+                    class="terminal-body-link"
+                    href="https://linkedin.com/in/mangaliso-qoshe-091a9b17a"
+                    target="_blank"
+                  >
+                    "Linkedin"</a
+                  >
+                  ]
+                </div>
+              </div>
+
+              <div class="terminal-body-items">
+                <div class="terminal-body-input">> Mangaliso.interest</div>
+                <div class="terminal-body-output">
+                  ["Chess", "Reading: Manga, Webtoons, Novels", "Tv shows",
+                  "Hiking", "Working Out"]
+                </div>
+              </div>
+
+              <div class="terminal-body-items">
+                <div class="terminal-body-input">> Mangaliso.education</div>
+                <div class="terminal-body-output">
+                  "Bsc in Computer Science and Computer Engineering - University
+                  Of Cape Town"
+                </div>
+              </div>
+
+              <div class="terminal-body-items">
+                <div class="terminal-body-input">> Mangaliso.skills</div>
+                <div class="terminal-body-output">
+                  ["Java" , "Python" , "C++" , "Javascript" , "Git", "MERN
+                  Stack" ]
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Projects -->
+      <section class="projects" id="projects">
+        <div class="container">
+          <h2
+            style="padding-bottom: 5rem"
+            class="fs-secondary-heading text-centre heading-f-s"
+          >
+            Projects
+          </h2>
+          <div class="project" style="background-color: #4854801e">
+            <img
+              src="Images/project1.png"
+              class="project-img"
+              alt="Project Image"
+            />
+            <div class="project-content project1">
+              <h3 class="project-name">Portfolio Website</h3>
+              <p class="project-description">
+                I created a development portfolio website, which supports theme switching
+                light-mode and dark-mode, and blog.
+              <ul class="project-stack">
+                <li class="project-item">Javascript</li>
+                <li class="project-item">Html</li>
+                <li class="project-item">Css</li>
+                <li class="project-item">Git</li>
+              </ul>
+              <div class="project-links">
+                <a
+                  class="link"
+                  href="https://github.com/mangalisoQoshe/Portfolio"
+                  ><img
+                    class="link-svg"
+                    src="/Images/github-brand.svg"
+                    alt="Github brand"
+                  />
+                  <span class="link-text">View Source</span>
+                </a>
+
+                <a
+                  class="link"
+                  href="https://github.com/mangalisoQoshe/Portfolio"
+                  ><img
+                    class="link-svg"
+                    src="/Images/external-link.svg"
+                    alt="External Link Brand"
+                  />
+
+                  <span class="link-text">Visit Website</span></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="project" style="background-color: #798dae48">
+            <img
+              src="Images/dear2.png"
+              class="project-img"
+              alt="Project Image"
+            />
+            <div class="project-content project2">
+              <h3 class="project-name">District Six App</h3>
+              <p class="project-description">
+                We developed an augmented reality app that guides users to
+                specific locations in District Six, some of which were
+                demolished during apartheid.
+              </p>
+              <ul class="project-stack">
+                <li class="project-item">Android Studio</li>
+                <li class="project-item">Java</li>
+                <li class="project-item">Arcgis Api</li>
+                <li class="project-item">CSS</li>
+              </ul>
+              <div class="project-links">
+                <a
+                  class="link"
+                  href="https://github.com/mangalisoQoshe/Portfolio"
+                  ><img
+                    class="link-svg"
+                    src="/Images/github-brand.svg"
+                    alt="Github brand"
+                  />
+                  <span class="link-text">View Source</span>
+                </a>
+
+              
+              </div>
+            </div>
+          </div>
+          <div class="project" style="background-color: #549bce2d">
+            <img
+              src="Images/pomodoro.png"
+              class="project-img"
+              alt="Project Image"
+            />
+            <div class="project-content project3">
+              <h3 class="project-name">Pomodoro-To-do</h3>
+              <p class="project-description">
+                A pomodoro inspired web app integrated with
+                a To-do list.
+              </p>
+              <ul class="project-stack">
+                <li class="project-item">HTML</li>
+                <li class="project-item">CSS</li>
+                <li class="project-item">React Js</li>
+              </ul>
+              <div class="project-links">
+                <a
+                  class="link"
+                  href="https://github.com/mangalisoQoshe/Portfolio"
+                  ><img
+                    class="link-svg"
+                    src="/Images/github-brand.svg"
+                    alt="Github brand"
+                  />
+                  <span class="link-text">View Source</span>
+                </a>
+
+                <a
+                  class="link"
+                  href="https://github.com/mangalisoQoshe/Portfolio"
+                  ><img
+                    class="link-svg"
+                    src="/Images/external-link.svg"
+                    alt="External Link Brand"
+                  />
+
+                  <span class="link-text">Visit Website</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- FOOTER -->
+    <footer id="contacts" class="footer bg-primary">
+      <div class="container">
+        <h4 style="font-size: 1.8rem; text-align: center">Get In Touch!</h4>
+        <div class="socials-container">
+          <a
+            class="socials"
+            href="https://instagram.com/mangaliso_qoshe?igshid=ZDdkNTiNTM="
+            ><img src="/Images/instagram.svg" alt="Instagram link and Icon"
+          /></a>
+
+          <a
+            class="socials"
+            href="https://linkedin.com/in/mangaliso-qoshe-091a9b17a"
+            target="_blank"
+            ><img src="/Images/linkedin.svg" alt="Linkedin link and Icon"
+          /></a>
+          <a
+            class="socials"
+            href="https://github.com/mangalisoQoshe"
+            target="_blank"
+            ><img src="/Images/github-2.svg" alt="Github link and Icon"
+          /></a>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Built and designed by
+          <span class="ff-logo" role="logo" style="font-size: 0.7rem"
+            >M.M Qoshe</span
+          >
+          Copyright &#169; 20123 All Rights Reserved
+        </p>
+      </div>
     </footer>
 
     <!-- SCRIPS -->

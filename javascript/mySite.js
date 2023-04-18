@@ -1,18 +1,26 @@
-const humburger = document.querySelector(".humburger");
+const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
-var scroll = new SmoothScroll('.nav a[href*="#"]',{
-    speed:800
+const navList = document.querySelector(".nav-list");
+const modeButton = document.querySelector(".mode-button");
+
+var scroll = new SmoothScroll('.nav a[href*="#"]', {
+  speed: 100,
 });
 
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navList.classList.toggle("active");
+  modeButton.classList.toggle("active");
+});
 
+document.querySelectorAll(".nav-link").forEach((n) =>
+  n.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    navList.classList.remove("active");
+    modeButton.classList.remove("active");
+  })
+);
 
-humburger.addEventListener("click",()=>{
-    humburger.classList.toggle("active");
-    navMenu.classList.toggle("active");
+modeButton.addEventListener("click", ()=>{
+  alert("Under Construction! 😂")
 })
-
-document.querySelectorAll(".nav-link").forEach(n=>n.addEventListener("click",()=>{
-    humburger.classList.remove("active");
-    navMenu.classList.remove("active");
-   
-}))
