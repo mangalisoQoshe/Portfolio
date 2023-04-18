@@ -21,6 +21,6 @@ document.querySelectorAll(".nav-link").forEach((n) =>
   })
 );
 
-modeButton.addEventListener("click", ()=>{
-  alert("Under Construction! 😂")
-})
+modeButton.addEventListener("click", () => {
+  document.body.classList.toggle(".dark-mode");
+});

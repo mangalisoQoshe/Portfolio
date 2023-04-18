@@ -1,5 +1,5 @@
 <svg width="0" height="0" class="hidden">
-  <symbol xmlns="http://www.w3.org/2000/svg" id="icon-code" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+  <symbol xmlns="http://www.w3.org/2000/svg" id="icon-code" stroke-width="2.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
     <polyline  points="7 8 3 12 7 16"></polyline>
     <polyline points="17 8 21 12 17 16"></polyline>
