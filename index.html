@@ -7,7 +7,7 @@
       content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes"
     />
     <title>Mangaliso Qoshe</title>
-    <link rel="icon" href="Images/page-icon" type="image/icon type" />
+    <link rel="icon" href="assets/page-icon" type="image/icon type" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
@@ -21,23 +21,20 @@
     />
   </head>
   <body>
-    <header class="primary-header">
+    <header class="primary-header active">
       <div class="container">
         <div class="nav-wrapper">
           <div class="logo-wrapper">
             <span class="ff-logo" role="logo">M.M Qoshe</span>
             <svg class="icon">
-              <use xlink:href="Images/code.svg#icon-code"></use>
+              <use xlink:href="assets/code.svg#icon-code"></use>
             </svg>
           </div>
 
           <nav class="nav">
             <ul class="nav-list">
               <li class="nav-item">
-                <a
-                  href="https://www.google.com/"
-                  target="_blank"
-                  class="nav-link"
+                <a href="/pages/blog.html" target="_blank" class="nav-link"
                   >Blog</a
                 >
               </li>
@@ -53,13 +50,13 @@
             </ul>
           </nav>
           <button class="mode-button">
-            <svg class="moon-icon">
-              <use xlink:href="Images/noun-moon-5633032.svg#icon-moon"></use>
+            <svg class="moon-icon visually-exposed">
+              <use xlink:href="assets/noun-moon-5633032.svg#icon-moon"></use>
             </svg>
             <img
-              src="Images/noun-sun-5282818.svg"
+              src="assets/noun-sun-5282818.svg"
               alt="sun icon"
-              class="visually-hidden"
+              class="sun-icon visually-hidden"
             />
           </button>
 
@@ -71,14 +68,14 @@
         </div>
 
         <div class="intro-container">
-          <img class="main-pic" src="Images/9.jpg" alt="Picture of me" />
+          <img class="main-pic" src="assets/9.jpg" alt="Picture of me" />
           <div class="intro-text">
             <span style="font-weight: 100">Hello, I'm </span> <br /><strong
               >Mangaliso Qoshe</strong
             >
             <img
               class="hand-icon"
-              src="Images/icons8-waving-hand-medium-skin-tone-96.png"
+              src="assets/icons8-waving-hand-medium-skin-tone-96.png"
               alt=""
             />
           </div>
@@ -87,20 +84,19 @@
       </div>
     </header>
 
-    <main  id="about-me">
+    <main id="about-me">
       <section class="about-me">
         <div class="container">
           <h2 class="fs-secondary-heading secondary-heading heading-f-s">
-            Welcome <span> to my personal website!</span>
+            Who am I?
           </h2>
           <p>
-            As a final year student, I'm eagerly seeking a permanent job or
-            internship. I'm passionate about building elegant, performant, and
-            maintainable code that makes people's lives easier. I've spent the
-            last few years honing my skills and I'm ready to take on new
-            challenges. Feel free to explore my portfolio and projects to get a
-            sense of my work. Let's collaborate and create useful applications
-            together!
+            I'm eagerly seeking a permanent job or internship. I'm passionate
+            about building elegant, performant, and maintainable code that makes
+            people's lives easier. I've spent the last few years honing my
+            skills and I'm ready to take on new challenges. Feel free to explore
+            my portfolio and projects to get a sense of my work. Let's
+            collaborate and create useful applications together!
           </p>
 
           <div class="terminal">
@@ -176,7 +172,7 @@
           </h2>
           <div class="project">
             <img
-              src="Images/project1.png"
+              src="assets/project1.png"
               class="project-img"
               alt="Project Image"
             />
@@ -196,10 +192,11 @@
               <div class="project-links">
                 <a
                   class="link"
+                  target="_blank"
                   href="https://github.com/mangalisoQoshe/Portfolio"
                   ><img
                     class="link-svg"
-                    src="/Images/github-brand.svg"
+                    src="/assets/github-brand.svg"
                     alt="Github brand"
                   />
                   <span class="link-text">View Source</span>
@@ -207,10 +204,11 @@
 
                 <a
                   class="link"
+                  target="_blank"
                   href="https://github.com/mangalisoQoshe/Portfolio"
                   ><img
                     class="link-svg"
-                    src="/Images/external-link.svg"
+                    src="/assets/external-link.svg"
                     alt="External Link Brand"
                   />
 
@@ -222,7 +220,7 @@
 
           <div class="project">
             <img
-              src="Images/dear2.png"
+              src="assets/dear2.png"
               class="project-img"
               alt="Project Image"
             />
@@ -231,7 +229,7 @@
               <p class="project-description">
                 We developed an augmented reality app that guides users to
                 specific locations in District Six, some of which were
-                demolished during apartheid.
+                demolished.
               </p>
               <ul class="project-stack">
                 <li class="project-item">Android Studio</li>
@@ -242,10 +240,11 @@
               <div class="project-links">
                 <a
                   class="link"
-                  href="https://github.com/mangalisoQoshe/Portfolio"
+                  target="_blank"
+                  href="https://gitlab.cs.uct.ac.za/d6ar-group/d6ar-implementation.git"
                   ><img
                     class="link-svg"
-                    src="/Images/github-brand.svg"
+                    src="/assets/github-brand.svg"
                     alt="Github brand"
                   />
                   <span class="link-text">View Source</span>
@@ -255,7 +254,7 @@
           </div>
           <div class="project">
             <img
-              src="Images/pomodoro.png"
+              src="assets/pomodoro.png"
               class="project-img"
               alt="Project Image"
             />
@@ -270,23 +269,19 @@
                 <li class="project-item">React Js</li>
               </ul>
               <div class="project-links">
-                <a
-                  class="link"
-                  href="https://github.com/mangalisoQoshe/Portfolio"
+                <a class="link" target="_blank" href="/pages/blog.html"
                   ><img
                     class="link-svg"
-                    src="/Images/github-brand.svg"
+                    src="/assets/github-brand.svg"
                     alt="Github brand"
                   />
                   <span class="link-text">View Source</span>
                 </a>
 
-                <a
-                  class="link"
-                  href="https://github.com/mangalisoQoshe/Portfolio"
+                <a class="link" target="_blank" href="/pages/blog.html"
                   ><img
                     class="link-svg"
-                    src="/Images/external-link.svg"
+                    src="/assets/external-link.svg"
                     alt="External Link Brand"
                   />
 
@@ -299,27 +294,27 @@
       </section>
     </main>
     <!-- FOOTER -->
-    <footer id="contacts" class="footer">
+    <footer id="contacts" class="footer active">
       <div class="container">
         <h4 style="font-size: 1.8rem; text-align: center">Get In Touch!</h4>
         <div class="socials-container">
           <a
             class="socials"
             href="https://instagram.com/mangaliso_qoshe?igshid=ZDdkNTiNTM="
-            ><img src="/Images/instagram.svg" alt="Instagram link and Icon"
+            ><img src="/assets/instagram.svg" alt="Instagram link and Icon"
           /></a>
 
           <a
             class="socials"
             href="https://linkedin.com/in/mangaliso-qoshe-091a9b17a"
             target="_blank"
-            ><img src="/Images/linkedin.svg" alt="Linkedin link and Icon"
+            ><img src="/assets/linkedin.svg" alt="Linkedin link and Icon"
           /></a>
           <a
             class="socials"
             href="https://github.com/mangalisoQoshe"
             target="_blank"
-            ><img src="/Images/github-2.svg" alt="Github link and Icon"
+            ><img src="/assets/github-2.svg" alt="Github link and Icon"
           /></a>
         </div>
       </div>
