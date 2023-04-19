@@ -4,7 +4,7 @@ URL https://mangalisoqoshe.github.io/Portfolio/
 
 This is my personal portfolio website.
 
-![Homepage's preview](./assets/projects1.png)
+![Homepage's preview](./assets/project1.png)
 
 
 ## Technologies
@@ -16,9 +16,3 @@ This is my personal portfolio website.
 
 ### Deployment
 - Deployment through Github pages
-
-
-
-
-
-
