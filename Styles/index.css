@@ -869,6 +869,10 @@ button {
     position: relative;
   }
 
+  .project0 .project-links{
+    bottom: -95px;
+  }
+
   .project1 .project-links {
     bottom: -39px;
   }
